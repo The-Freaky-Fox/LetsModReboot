@@ -1,6 +1,7 @@
 package thefreakyfox.letsmodreboot;
 
 import thefreakyfox.letsmodreboot.handler.ConfigHandler;
+import thefreakyfox.letsmodreboot.init.ModBlocks;
 import thefreakyfox.letsmodreboot.init.ModItems;
 import thefreakyfox.letsmodreboot.lib.ModConstants;
 import thefreakyfox.letsmodreboot.proxy.IProxy;
@@ -34,6 +35,7 @@ public class LetsModReboot {
 		FMLCommonHandler.instance().bus().register( new ConfigHandler() );
 
 		ModItems.init();
+		ModBlocks.init();
 
 		LogHelper.info( "Pre-initialisation complete!" );
 	}
