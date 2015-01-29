@@ -1,6 +1,6 @@
 package thefreakyfox.letsmodreboot.proxy;
 
 
-public class ClientProxy implements IProxy {
+public class ClientProxy extends CommonProxy {
 
 }
