@@ -3,6 +3,7 @@ package thefreakyfox.letsmodreboot.item;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import thefreakyfox.letsmodreboot.creativetab.CreativeTabLMRB;
 import thefreakyfox.letsmodreboot.lib.ModConstants;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -12,6 +13,7 @@ public class ItemLMRB extends Item {
 
 	public ItemLMRB() {
 		super();
+		setCreativeTab( CreativeTabLMRB.LMRB_TAB );
 	}
 
 	@Override

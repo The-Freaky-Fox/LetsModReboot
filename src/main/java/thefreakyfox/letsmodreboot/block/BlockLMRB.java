@@ -3,6 +3,7 @@ package thefreakyfox.letsmodreboot.block;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
+import thefreakyfox.letsmodreboot.creativetab.CreativeTabLMRB;
 import thefreakyfox.letsmodreboot.lib.ModConstants;
 
 
@@ -10,6 +11,7 @@ public class BlockLMRB extends Block {
 
 	public BlockLMRB( Material material ) {
 		super( material );
+		setCreativeTab( CreativeTabLMRB.LMRB_TAB );
 	}
 
 	public BlockLMRB() {
