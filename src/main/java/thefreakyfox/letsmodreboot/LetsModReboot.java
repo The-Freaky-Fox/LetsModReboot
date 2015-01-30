@@ -1,5 +1,6 @@
 package thefreakyfox.letsmodreboot;
 
+import thefreakyfox.letsmodreboot.client.handler.KeyInputEventHandler;
 import thefreakyfox.letsmodreboot.handler.ConfigHandler;
 import thefreakyfox.letsmodreboot.init.ModBlocks;
 import thefreakyfox.letsmodreboot.init.ModItems;
@@ -35,6 +36,8 @@ public class LetsModReboot {
 		ConfigHandler.init( event.getSuggestedConfigurationFile() );
 		FMLCommonHandler.instance().bus().register( new ConfigHandler() );
 
+		proxy.registerKeyBindings();
+
 		ModItems.init();
 		ModBlocks.init();
 
@@ -47,6 +50,7 @@ public class LetsModReboot {
 	@EventHandler
 	public void init( FMLInitializationEvent event ) {
 		Recipes.init();
+		FMLCommonHandler.instance().bus().register( new KeyInputEventHandler() );
 		LogHelper.info( "Initialisation complete!" );
 	}
 
