@@ -17,10 +17,10 @@ public class NBTHelper {
 	}
 
 	/**
-	 * Initializes the NBT Tag Compound for the given ItemStack if it is null
+	 * Initialises the NBT Tag Compound for the given ItemStack if it is null
 	 *
 	 * @param itemStack
-	 *            The ItemStack for which its NBT Tag Compound is being checked for initialization
+	 *            The ItemStack for which its NBT Tag Compound is being checked for initialisation
 	 */
 	private static void initNBTTagCompound( ItemStack itemStack ) {
 		if ( itemStack.stackTagCompound == null ) {

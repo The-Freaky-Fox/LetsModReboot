@@ -3,6 +3,7 @@ package thefreakyfox.letsmodreboot;
 import thefreakyfox.letsmodreboot.handler.ConfigHandler;
 import thefreakyfox.letsmodreboot.init.ModBlocks;
 import thefreakyfox.letsmodreboot.init.ModItems;
+import thefreakyfox.letsmodreboot.init.Recipes;
 import thefreakyfox.letsmodreboot.lib.ModConstants;
 import thefreakyfox.letsmodreboot.proxy.IProxy;
 import thefreakyfox.letsmodreboot.util.LogHelper;
@@ -45,6 +46,7 @@ public class LetsModReboot {
 	 */
 	@EventHandler
 	public void init( FMLInitializationEvent event ) {
+		Recipes.init();
 		LogHelper.info( "Initialisation complete!" );
 	}
 
